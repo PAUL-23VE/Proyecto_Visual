@@ -1,0 +1,21 @@
+<?php
+
+class Conexion
+{
+
+    public function conectar()
+    {
+        $serverName = 'localhost';
+        $userName = 'root';
+        $password = '';
+        $db = 'cuarto';
+        $conn = mysqli_connect($serverName, $userName, $password, $db);
+        if (!$conn) {
+            echo('Error en la conexion: ' . mysqli_connect_error());
+        } else {
+            //echo 'Conexion exitosa';
+            return $conn;
+        }
+    }
+}
+?>
