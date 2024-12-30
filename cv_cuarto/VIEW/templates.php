@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="jquery/themes/color.css">
     <script type="text/javascript" src="jquery/jquery.min.js"></script>
     <script type="text/javascript" src="jquery/jquery.easyui.min.js"></script>
-    <script src="./js/operaciones.js"></script>
+    <!-- <script src="./js/operaciones.js"></script> -->
 </head>
 
 <body>
@@ -26,6 +26,8 @@
             <li><a href="index.php?action=nosotros">NOSOTROS</a></li>
             <li><a href="index.php?action=contactanos">CONTACTANOS</a></li>
             <li><a href="index.php?action=servicios">SERVICIOS</a></li>
+            <li><a href="index.php?action=login">LOGIN</a></li>
+
         </ul>
     </nav>
     <section>
