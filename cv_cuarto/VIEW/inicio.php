@@ -15,7 +15,7 @@
         }
         .card {
             margin-bottom: 20px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 4px 16px 32px #930B0D;
         }
         .card-img-top {
             height: 200px;

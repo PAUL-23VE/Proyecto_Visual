@@ -37,7 +37,7 @@
         ?>
     </section>
     <footer>
-        Derechos Reservados @cuartoSoftware
+        Derechos Reservados @CuartoSoftware
     </footer>
 </body>
 
