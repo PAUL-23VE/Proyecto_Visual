@@ -91,7 +91,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card text-center">
-                    <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto mt-3" alt="Foto integrante" style="width: 150px; height: 150px;">
+                    <img src="images/william.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Foto integrante" style="width: 150px; height: 150px;">
                     <div class="card-body">
                         <h5 class="card-title">WILLIAM CHIMBORAZO GUAMAN</h5>
                         <p class="card-text">Estudiante de Ingenieria en Software</p>
