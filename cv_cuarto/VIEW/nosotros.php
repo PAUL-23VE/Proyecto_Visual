@@ -40,8 +40,52 @@
                     <div class="card-body">
                         <h5 class="card-title">LUIS ALEXANDER QUISHPE LOPEZ</h5>
                         <p class="card-text">Estudiante de Ingenieria en Software</p>
-                        <p class="card-text">Integrante del grupo 4 </p>
-                        <button class="btn btn-custom">Más información</button>
+                        <p class="card-text">Edad: 22 años</p>
+                        <p class="card-text">Correo: lquishpe5771@uta.edu.ec</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                    <img src="images/giler.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Foto integrante" style="width: 150px; height: 150px;">
+                    <div class="card-body">
+                        <h5 class="card-title">NERIS DAVID GILER RIZZO</h5>
+                        <p class="card-text">Estudiante de Ingenieria en Software</p>
+                        <p class="card-text">Edad: 20 años</p>
+                        <p class="card-text">Correo: ngiler6420@uta.edu.ec</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                    <img src="images/paul.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Foto integrante" style="width: 150px; height: 150px;">
+                    <div class="card-body">
+                        <h5 class="card-title">ANTHONY PAUL VELASTEGUI EUGENIO</h5>
+                        <p class="card-text">Estudiante de Ingenieria en Software</p>
+                        <p class="card-text">Edad: 21 años</p>
+                        <p class="card-text">Correo: avelastegui3517@uta.edu.ec</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                    <img src="images/jona.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Foto integrante" style="width: 150px; height: 150px;">
+                    <div class="card-body">
+                        <h5 class="card-title">JONATHAN JOSUE LÓPEZ OCAÑA</h5>
+                        <p class="card-text">Estudiante de Ingenieria en Software</p>
+                        <p class="card-text">Edad: 25 años</p>
+                        <p class="card-text">Correo: jlopez5560@uta.edu.ec</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                    <img src="images/angie.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Foto integrante" style="width: 150px; height: 150px;">
+                    <div class="card-body">
+                        <h5 class="card-title">ANGIE NOHEMI CAIZA VALLE</h5>
+                        <p class="card-text">Estudiante de Ingenieria en Software</p>
+                        <p class="card-text">Edad: 22 años</p>
+                        <p class="card-text">Correo: acaiza0477@uta.edu.ec</p>
                     </div>
                 </div>
             </div>
@@ -49,54 +93,10 @@
                 <div class="card text-center">
                     <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto mt-3" alt="Foto integrante" style="width: 150px; height: 150px;">
                     <div class="card-body">
-                        <h5 class="card-title">Nombre del Integrante</h5>
-                        <p class="card-text">Rol: Desarrollador Backend</p>
-                        <p class="card-text">Descripción breve del integrante.</p>
-                        <button class="btn btn-custom">Más información</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card text-center">
-                    <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto mt-3" alt="Foto integrante" style="width: 150px; height: 150px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Nombre del Integrante</h5>
-                        <p class="card-text">Rol: Diseñador</p>
-                        <p class="card-text">Descripción breve del integrante.</p>
-                        <button class="btn btn-custom">Más información</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card text-center">
-                    <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto mt-3" alt="Foto integrante" style="width: 150px; height: 150px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Nombre del Integrante</h5>
-                        <p class="card-text">Rol: Tester</p>
-                        <p class="card-text">Descripción breve del integrante.</p>
-                        <button class="btn btn-custom">Más información</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card text-center">
-                    <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto mt-3" alt="Foto integrante" style="width: 150px; height: 150px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Nombre del Integrante</h5>
-                        <p class="card-text">Rol: Analista</p>
-                        <p class="card-text">Descripción breve del integrante.</p>
-                        <button class="btn btn-custom">Más información</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card text-center">
-                    <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto mt-3" alt="Foto integrante" style="width: 150px; height: 150px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Nombre del Integrante</h5>
-                        <p class="card-text">Rol: Líder de proyecto</p>
-                        <p class="card-text">Descripción breve del integrante.</p>
-                        <button class="btn btn-custom">Más información</button>
+                        <h5 class="card-title">WILLIAM CHIMBORAZO GUAMAN</h5>
+                        <p class="card-text">Estudiante de Ingenieria en Software</p>
+                        <p class="card-text">Edad: 22 años</p>
+                        <p class="card-text">Correo: wchimborazo2840@uta.edu.ec</p>
                     </div>
                 </div>
             </div>
