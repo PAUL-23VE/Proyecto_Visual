@@ -31,9 +31,9 @@
     <div id="toolbar">
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newUser()">Nuevo </a>
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editUser()">Editar</a>
-        <a href="Reportes/Fpdf/Reportes.php" class="easyui-linkbutton" iconCls="icon-remove" plain="true" >fpdf Repo</a>
-        <a href="Reportes/Ireport/Ireport.php" class="easyui-linkbutton" iconCls="icon-remove" plain="true" >Ireport </a>
-        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="ReportePersonal()">IreportCedula</a>
+        <a href="Reportes/Fpdf/Reportes.php" target="_blank" class="easyui-linkbutton" iconCls="icon-print" plain="true" >Reporte FPDF</a>
+        <a href="Reportes/Ireport/Ireport.php" target="_blank" class="easyui-linkbutton" iconCls="icon-print" plain="true" >Generar Ireport </a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-print" plain="true" onclick="ReportePersonal()">Reporte Personal</a>
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="destroyUser()">Eliminar </a>
     </div>
     
