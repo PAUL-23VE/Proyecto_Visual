@@ -3,9 +3,9 @@
 class Conexion
 {
 
-    public function conectar()
+    public  static function conectar()
     {
-        $serverName = 'localhost';
+        $serverName = 'localhost:3387';
         $userName = 'root';
         $password = '';
         $db = 'cuarto';
