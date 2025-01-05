@@ -21,6 +21,7 @@ if (isset($_SESSION['token'])) {
     <h2>MANEJO ESTUDIANTES</h2>
 
     <div style="display: flex; justify-content: center; align-items: center; padding: 35px;">
+
         <table id="dg" title="ESTUDIANTES" class="easyui-datagrid" style="width:900px;height:300px;"
             url="MODELS/acceder.php" toolbar="#toolbar" pagination="true" rownumbers="true" fitColumns="true"
             singleSelect="true">
@@ -37,32 +38,33 @@ if (isset($_SESSION['token'])) {
     </div>
 
     <div id="toolbar">
-        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newUser()">New
-            User</a>
-        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-edit" plain="true"
-            onclick="editUser()">Edit User</a>
-        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true"
-            onclick="destroyUser()">Remove User</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newUser()">Nuevo </a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editUser()">Editar</a>
+        <a href="Reportes/Fpdf/Reportes.php" target="_blank" class="easyui-linkbutton" iconCls="icon-print" plain="true" >Reporte FPDF</a>
+        <a href="Reportes/Ireport/Ireport.php" target="_blank" class="easyui-linkbutton" iconCls="icon-print" plain="true" >Generar Ireport </a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-print" plain="true" onclick="ReportePersonal()">Reporte Personal</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="destroyUser()">Eliminar </a>
+
     </div>
 
     <div id="dlg" class="easyui-dialog" style="width:400px"
         data-options="closed:true,modal:true,border:'thin',buttons:'#dlg-buttons'">
         <form id="fm" method="post" novalidate style="margin:0;padding:20px 50px">
-            <h3>User Information</h3>
+            <h3>Datos estudiante</h3>
             <div style="margin-bottom:10px">
-                <input name="EST_CED" class="easyui-textbox" required="true" label="CEDULA:" style="width:100%">
+                <input name="estCedula" class="easyui-textbox" required="true" label="Cedula:" style="width:100%">
             </div>
             <div style="margin-bottom:10px">
-                <input name="EST_NOM" class="easyui-textbox" required="true" label="NOMBRE:" style="width:100%">
+                <input name="estNombre" class="easyui-textbox" required="true" label="Nombre:" style="width:100%">
             </div>
             <div style="margin-bottom:10px">
-                <input name="EST_APE" class="easyui-textbox" required="true" label="APELLIDO:" style="width:100%">
+                <input name="estApellido" class="easyui-textbox" required="true" label="Apellido:" style="width:100%">
             </div>
             <div style="margin-bottom:10px">
-                <input name="EST_TEL" class="easyui-textbox" required="true" label="TELEFONO:" style="width:100%">
+                <input name="estTelefono" class="easyui-textbox" required="true" label="Telefono:" style="width:100%">
             </div>
             <div style="margin-bottom:10px">
-                <input name="EST_DIR" class="easyui-textbox" required="true" label="DIRECCION:" style="width:100%">
+                <input name="estDireccion" class="easyui-textbox" required="true" label="Direccion:" style="width:100%">
             </div>
         </form>
     </div>
@@ -91,6 +93,20 @@ if (isset($_SESSION['token'])) {
                 console.error("Error al decodificar el token", error);
                 return false;
             }
+
+        function ReportePersonal() {
+            var row = $( '#dg' ).datagrid( 'getSelected' );
+            if ( row ) {
+                url = 'Reportes/ReporteCedula/ReporteCedula.php?estCedula=' + row.estCedula;
+                window.open( url, '_blank' );
+            }
+        }
+        
+        var url;
+        function newUser(){
+            $('#dlg').dialog('open').dialog('center').dialog('setTitle','New User');
+            $('#fm').form('clear');
+            url = 'MODELS/guardar.php';
         }
         window.onload = function () {
             verificarToken();

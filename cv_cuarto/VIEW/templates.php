@@ -58,7 +58,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'logout') {
         ?>
     </section>
     <footer>
-        Derechos Reservados @cuartoSoftware
+        Derechos Reservados @CuartoSoftware
     </footer>
 </body>
 
