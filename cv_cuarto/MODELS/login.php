@@ -32,7 +32,7 @@ if (isset($_POST['usuario']) && isset($_POST['password'])) {
                 "iss" => "http://localhost/Proyecto_Visual", // Emisor
                 "aud" => "http://localhost/Proyecto_Visual", // Receptor
                 "iat" => time(), // Tiempo actual
-                "exp" => time() + 10, 
+                "exp" => time() + 120, 
                 "data" => [
                     "usuario" => $usuario
                 ]
