@@ -37,19 +37,18 @@ if (isset($_SESSION['token'])) {
     </div>
 
     <div id="toolbar">
-        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newUser()">Nuevo
-        </a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true"
+            onclick="newUser()">Nuevo</a>
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-edit" plain="true"
             onclick="editUser()">Editar</a>
-        <a href="Reportes/Fpdf/Reportes.php" target="_blank" class="easyui-linkbutton" iconCls="icon-print"
-            plain="true">Reporte FPDF</a>
-        <a href="Reportes/Ireport/Ireport.php" target="_blank" class="easyui-linkbutton" iconCls="icon-print"
-            plain="true">Generar Ireport </a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-print" plain="true"
+            onclick="reporteFpdf()">Reporte FPDF</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-print" plain="true"
+            onclick="reporteIreport()">Generar Ireport</a>
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-print" plain="true"
             onclick="ReportePersonal()">Reporte Personal</a>
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true"
-            onclick="destroyUser()">Eliminar </a>
-
+            onclick="destroyUser()">Eliminar</a>
     </div>
 
     <div id="dlg" class="easyui-dialog" style="width:400px"
@@ -99,12 +98,32 @@ if (isset($_SESSION['token'])) {
                 return false;
             }
         }
+        function reporteFpdf() {
+            if (verificarToken()) {
+                window.open('Reportes/Fpdf/Reportes.php', '_blank');
+            } else {
+                window.location.href = "index.php?action=login";
+            }
+        }
+
+        function reporteIreport() {
+            if (verificarToken()) {
+                window.open('Reportes/Ireport/Ireport.php', '_blank');
+            } else {
+                window.location.href = "index.php?action=login";
+            }
+        }
+
 
         function ReportePersonal() {
-            var row = $('#dg').datagrid('getSelected');
-            if (row) {
-                url = 'Reportes/ReporteCedula/ReporteCedula.php?EST_CED=' + row.EST_CED;
-                window.open(url, '_blank');
+            if (verificarToken()) {
+                var row = $('#dg').datagrid('getSelected');
+                if (row) {
+                    url = 'Reportes/ReporteCedula/ReporteCedula.php?EST_CED=' + row.EST_CED;
+                    window.open(url, '_blank');
+                }
+            } else {
+                window.location.href = "index.php?action=login";
             }
         }
 
