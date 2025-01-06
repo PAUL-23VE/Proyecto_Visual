@@ -16,19 +16,19 @@
 	<queryString language="SQL">
 		<![CDATA[select * from estudiantes]]>
 	</queryString>
-	<field name="estCedula" class="java.lang.String">
+	<field name="EST_CED" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="estNombre" class="java.lang.String">
+	<field name="EST_NOM" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="estApellido" class="java.lang.String">
+	<field name="EST_APE" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="estTelefono" class="java.lang.String">
+	<field name="EST_TEL" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="estDireccion" class="java.lang.String">
+	<field name="EST_DIR" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<background>
@@ -102,35 +102,35 @@
 					<textElement>
 						<font size="11"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$F{estCedula}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{EST_CED}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
 					<reportElement style="Detail" positionType="Float" x="111" y="0" width="111" height="18" uuid="3501fab6-6194-43d8-90bb-0e13c6e8f2d4"/>
 					<textElement>
 						<font size="11"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$F{estNombre}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{EST_NOM}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
 					<reportElement style="Detail" positionType="Float" x="222" y="0" width="111" height="18" uuid="1c1d9129-e00b-4ca7-b3d9-bdd6d9e39a2e"/>
 					<textElement>
 						<font size="11"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$F{estApellido}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{EST_APE}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
 					<reportElement style="Detail" positionType="Float" x="333" y="0" width="111" height="18" uuid="ed3fd3a1-e778-4629-8f54-21895f7056be"/>
 					<textElement>
 						<font size="11"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$F{estTelefono}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{EST_TEL}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
 					<reportElement style="Detail" positionType="Float" x="444" y="0" width="111" height="18" uuid="eba6ca3f-b56a-438a-b259-94b192bac9c5"/>
 					<textElement>
 						<font size="11"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$F{estDireccion}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{EST_DIR}]]></textFieldExpression>
 				</textField>
 			</frame>
 		</band>

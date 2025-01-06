@@ -3,8 +3,8 @@ require_once('../fpdf186/fpdf.php');
 require_once('../../MODELS/conexion.php');
 
 
-$cedula = $_GET['estCedula'];
-$sql = "SELECT  * FROM estudiantes WHERE estCedula='$cedula'";
+$cedula = $_GET['EST_CED'];
+$sql = "SELECT  * FROM estudiantes WHERE EST_CED='$cedula'";
 $resultado = Conexion::conectar()->query($sql);
 
 $pdf = new FPDF();
@@ -26,11 +26,11 @@ $pdf->Cell(46, 10, "Telefono", 1, 1, 'C');
 
 $pdf->SetFont('Arial', '', 11);
 while ($row = $resultado->fetch_object()) {
-    $cedula = $row->estCedula;
-    $nombre = $row->estNombre;
-    $apellido = $row->estApellido;
-    $direccion = $row->estDireccion;
-    $telefono = $row->estTelefono;
+    $cedula = $row->EST_CED;
+    $nombre = $row->EST_NOM;
+    $apellido = $row->EST_APE;
+    $direccion = $row->EST_DIR;
+    $telefono = $row->EST_TEL;
     $pdf->Cell(25, 10, "$cedula", 1);
     $pdf->Cell(30, 10, "$nombre", 1);
     $pdf->Cell(40, 10, "$apellido", 1);
