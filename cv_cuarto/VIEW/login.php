@@ -88,7 +88,7 @@
           errorMessage.textContent = data.error; // Mostrar mensaje de error
         } else if (data.success) {
           localStorage.setItem('token', data.token); // Guardar el token en localStorage
-          window.location.href = 'http://localhost/cuartoProyecto/Proyecto_Visual/cv_cuarto/index.php?action=servicios';
+          window.location.href = 'http://localhost/Proyecto_Visual/cv_cuarto/index.php?action=servicios';
         }
       } catch (error) {
         errorMessage.textContent = `Error: ${error.message}`;
