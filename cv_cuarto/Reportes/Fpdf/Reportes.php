@@ -29,11 +29,11 @@ $pdf->Cell(46, 10, "Telefono", 1, 1, 'C');
 $pdf->SetFont('Arial', '', 11);
 
 while ($fila = $resultado->fetch_object()) {
-    $cedula = $fila->estCedula;
-    $nombre = $fila->estNombre;
-    $apellido = $fila->estApellido;
-    $direccion = $fila->estDireccion;
-    $telefono = $fila->estTelefono;
+    $cedula = $fila->EST_CED;
+    $nombre = $fila->EST_NOM;
+    $apellido = $fila->EST_APE;
+    $direccion = $fila->EST_DIR;
+    $telefono = $fila->EST_TEL;
 
     $pdf->Cell(25, 10, $cedula, 1);
     $pdf->Cell(30, 10, $nombre, 1);

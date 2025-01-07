@@ -8,10 +8,10 @@ $filename = "report1.jrxml";
 
 $config = [
     'driver' => 'mysql',
-    'host' => 'localhost:3387',
-    'user' => 'root',
-    'pass' => '',
-    'name' => 'cuarto'
+    'host' => 'sql3.freemysqlhosting.net',
+    'user' => 'sql3756113',
+    'pass' => 'yHVCR3ibYr',
+    'name' => 'sql3756113'
 ];
 
 $report = new PHPJasperXML();
